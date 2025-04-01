@@ -98,44 +98,146 @@ a {
     line-height: 1.6;
 }
 /* Resume Section Styling */
+/* Resume Section Styling */
 #resume {
-    background-color: #6f094d;
+    background: linear-gradient(135deg, #ff6db6 0%, #ff3b8c 100%); /* Pink gradient background */
     padding: 50px 0;
     text-align: center;
-  }
-  
-  #resume .container {
+    color: #fff;
+}
+
+#resume .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background: #fb94f6;
+    background: #f9c1d4; /* Soft pink background for the container */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #resume h2 {
-    font-size: 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+#resume h2 {
+    font-size: 2.8rem;
     margin-bottom: 20px;
-  }
-  
-  #resume h3 {
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#resume h3 {
     font-size: 22px;
     margin-top: 20px;
-    color: #333;
+    color: #3e1b41; /* Darker pink for job titles */
     text-align: left;
-  }
-  
-  #resume ul {
+    position: relative;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+#resume h3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 5px;
+    height: 20px;
+    background-color: #f4f4f4;
+    transform: translateY(-50%);
+}
+
+#resume ul {
     list-style-type: none;
     padding: 0;
     text-align: left;
-  }
-  
-  #resume ul li {
+    margin-top: 20px;
+}
+
+#resume ul li {
     font-size: 18px;
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#resume ul li i {
+    margin-right: 10px;
+    color: #ff3b8c; /* Pink icons */
+}
+
+/* Adding subtle hover effect to the resume items */
+#resume ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+    transition: 0.3s ease-in-out;
+}
+
+/* Add a subtle shadow effect to each job card */
+.job-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Add an icon next to each responsibility */
+.job-card ul li {
+    font-size: 1rem;
+    padding: 8px 0;
+}
+
+.job-card ul li i {
+    margin-right: 10px;
+    color: #f50057; /* Pink icon color */
+}
+
+/* Skills Progress Bar */
+.progress-bar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.progress-bar {
+    width: 45%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar .progress-fill {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f50057; /* Pink progress fill */
+    width: 80%; /* You can change this based on the skill level */
+}
+
+/* Fade-in Animation for Resume Section */
+#resume {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
   
   
 /* Skills Section */
