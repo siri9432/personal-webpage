@@ -121,7 +121,7 @@ a {
     font-size: 2.8rem;
     margin-bottom: 20px;
     font-weight: 600;
-    color: #000;
+    color: #000; /* Black font for the main heading */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -129,7 +129,7 @@ a {
 #resume h3 {
     font-size: 22px;
     margin-top: 20px;
-    color: #000; /* Darker pink for job titles */
+    color: #000; /* Black color for job titles */
     text-align: left;
     position: relative;
     font-weight: 600;
@@ -152,6 +152,7 @@ a {
     padding: 0;
     text-align: left;
     margin-top: 20px;
+    color: #000; /* Added black color to list text */
 }
 
 #resume ul li {
@@ -161,6 +162,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    color: #000; /* Ensures black color for list items */
 }
 
 #resume ul li i {
@@ -195,6 +197,7 @@ a {
 .job-card ul li {
     font-size: 1rem;
     padding: 8px 0;
+    color: #000; /* Added black font for job card list items */
 }
 
 .job-card ul li i {
