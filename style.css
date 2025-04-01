@@ -1,0 +1,241 @@
+/* Global Styles */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: 'Open Sans', sans-serif;
+     line-height: 1.6;
+     background-color: #f4f7f6;
+     color: #031318;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: #cb6d0e;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 0 auto;
+     max-width: 1200px;
+ }
+ 
+ /* Hero Section */
+ #hero {
+     background: linear-gradient(135deg, #460591 0%, #af2626 100%);
+     color: #e3d8d8;
+     padding: 100px 0;
+     text-align: center;
+ }
+ 
+ #hero h1 {
+     font-size: 3.5rem;
+     margin-bottom: 20px;
+     font-weight: 600;
+ }
+ 
+ #hero p {
+     font-size: 1.2rem;
+     margin-bottom: 30px;
+     font-weight: 400;
+ }
+ 
+ .cta-button {
+     background-color: #526553;
+     color: #2575fc;
+     padding: 15px 25px;
+     font-size: 1.2rem;
+     border-radius: 30px;
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+     transition: background-color 0.3s ease;
+ }
+ 
+ .cta-button:hover {
+     background-color: #f4f7f6;
+     color: #6a11cb;
+ }
+ 
+ /* About Section */
+ #about {
+     padding: 60px 0;
+     background-color: #ffffff;
+ }
+ 
+ #about h2 {
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 40px;
+     font-weight: 600;
+     color: #1f8e49;
+ }
+ 
+ .about-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .profile-img img {
+     width: 250px;
+     height: 250px;
+     border-radius: 50%;
+     border: 5px solid #e617ab;
+     object-fit: cover;
+     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .bio {
+     max-width: 600px;
+     margin-left: 40px;
+ }
+ 
+ .bio p {
+     font-size: 1.2rem;
+     line-height: 1.6;
+ }
+ 
+ /* Skills Section */
+ #skills {
+     padding: 60px 0;
+     background-color: #e1e1dd;
+ }
+ 
+ #skills h2 {
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 40px;
+     font-weight: 600;
+     color: #711495;
+ }
+ 
+ .skills-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+ 
+ .skill-item {
+     width: 45%;
+     margin-bottom: 30px;
+ }
+ 
+ .skill-item h3 {
+     font-size: 1.5rem;
+     margin-bottom: 10px;
+     font-weight: 600;
+ }
+ 
+ .skill-bar {
+     height: 10px;
+     background-color: #7a1394;
+     border-radius: 5px;
+     margin-top: 5px;
+ }
+ 
+ .skill-item:nth-child(even) .skill-bar {
+     background-color:  #7a1394;
+ }
+ 
+ /* Contact Section */
+ #contact {
+     padding: 60px 0;
+     
+ }
+ 
+ .contact-form-container {
+     text-align: center;
+     background: linear-gradient(135deg,  #ed77b8 0%,#61033f 100%);
+ }
+ 
+ .contact-form h2 {
+     font-size: 2.5rem;
+     margin-bottom: 40px;
+     font-weight: 600;
+     color: #0a46af;
+ }
+ 
+ .contact-form input,
+ .contact-form textarea {
+     width: 80%;
+     padding: 15px;
+     margin-bottom: 20px;
+     font-size: 1.1rem;
+     border: 2px solid #ddd;
+     border-radius: 8px;
+     outline: none;
+ }
+ 
+ .contact-form input:focus,
+ .contact-form textarea:focus {
+     border-color: #9f7b16;
+ }
+ 
+ .contact-form .submit-btn {
+     background-color: #614979;
+     color: #fff;
+     padding: 15px 30px;
+     font-size: 1.2rem;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .contact-form .submit-btn:hover {
+     background-color: #34a987;
+ }
+ 
+ /* Footer */
+ footer {
+     padding: 20px 0;
+     background-color: #530a16;
+     text-align: center;
+     color: #fff;
+ }
+ 
+ footer p {
+     font-size: 1rem;
+ }
+ 
+ /* Media Queries */
+ @media screen and (max-width: 768px) {
+     #hero h1 {
+         font-size: 2.5rem;
+     }
+ 
+     #hero p {
+         font-size: 1rem;
+     }
+ 
+     .about-content {
+         flex-direction: column;
+         text-align: center;
+     }
+ 
+     .bio {
+         margin-left: 0;
+         margin-top: 20px;
+     }
+ 
+     .skills-list {
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     .skill-item {
+         width: 80%;
+         text-align: center;
+     }
+ 
+     .contact-form input,
+     .contact-form textarea {
+         width: 90%;
+     }
+ 
+     .contact-form .submit-btn {
+         width: 90%;
+     }
+ }
